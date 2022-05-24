@@ -19,12 +19,11 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
-            # - name: npm install
-            #   run: |
-            #       npm install
+            - name: npm install
+              run: |
+                  npm install
             - name: "运行 【测试】"
               run: |
-                  cat jd_bean_sign.js
                   node -v
                   ls -a
                   echo "test"
