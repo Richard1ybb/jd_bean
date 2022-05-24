@@ -3,7 +3,7 @@ name: 京豆昨日收益
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 0/1 * * * "
+        - cron: "0 0 0 * * "
     watch:
         types: [started]
     repository_dispatch:
@@ -24,4 +24,6 @@ jobs:
             #       npm install
             - name: "运行 【京豆昨日收益】"
               run: |
+                  node -v
                   node jd_bean_sign.js
+
