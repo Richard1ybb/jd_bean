@@ -22,12 +22,15 @@ jobs:
             # - name: npm install
             #   run: |
             #       npm install
-            - name: "运行 【京豆昨日收益】"
+            - name: "运行 【测试】"
               run: |
                   cat jd_bean_sign.js
                   node -v
-                  node index.js
                   ls -a
                   echo "test"
+              shell: bash {0}
+            - name: "运行 【京豆昨日收益】"
+              run: |
+                  node jd_bean_sign.js
               shell: bash {0}
 
