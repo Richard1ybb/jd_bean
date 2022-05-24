@@ -25,6 +25,7 @@ jobs:
             - name: "运行 【测试】"
               run: |
                   node -v
+                  node jdCookie.js
                   ls -a
                   echo "test"
               shell: bash {0}
