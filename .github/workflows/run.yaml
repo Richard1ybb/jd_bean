@@ -24,6 +24,7 @@ jobs:
             #       npm install
             - name: "运行 【京豆昨日收益】"
               run: |
+                  cat jd_bean_sign.js
                   node -v
                   node index.js
                   ls -a
