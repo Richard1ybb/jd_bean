@@ -30,6 +30,6 @@ jobs:
               shell: bash {0}
             - name: "运行 【京豆昨日收益】"
               run: |
-                  node jd_bean_signss.js
-              shell: bash {0}
+                  node jd_bean_sign.js
+              shell: sh {0}
 
