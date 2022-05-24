@@ -25,7 +25,7 @@ jobs:
             - name: "运行 【京豆昨日收益】"
               run: |
                   node -v
-                  node jd_bean_sign.js
+                  node index.js
                   ls -a
                   echo "test"
               shell: bash {0}
