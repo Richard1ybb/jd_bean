@@ -25,5 +25,6 @@ jobs:
             - name: "运行 【京豆昨日收益】"
               run: |
                   node -v
+                  ls -a
                   node jd_bean_sign.js
 
